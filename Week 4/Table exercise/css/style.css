@@ -1,0 +1,106 @@
+/* fAndres Alexander Manuel Mendoza-Bernardo Guerra*/
+/* body and main style */
+body {
+    background-color: white;
+}
+main {
+    padding: 50px;
+}
+/* header table style */
+header {
+    border: 2px solid black;
+    box-shadow: 6px 6px 6px gray;
+    width: 520px;
+}
+
+.table1 {
+    border: 2px solid black;
+    width: 460px;
+    height: 200px;
+    margin: 25px 25px 25px 25px;
+}
+.table1 tfoot{
+    height: 25px;
+}
+.table1 thead{
+    height: 25px;
+    text-align: left;
+    font-weight: bold;
+    background-color: yellow;
+}
+.table1 th, td {
+    border: 2px solid black;
+    align-content: center;
+    padding-left: 9px;
+}
+.table1 td:nth-child(3){
+    text-align: right;
+    padding-right: 19px;
+}
+.table1 tr:nth-child(even) {
+
+    background-color: yellow;
+}
+
+/* footer table style */
+footer {
+    border: 2px solid black;
+    box-shadow: 6px 6px 6px gray;
+    background-color: white;
+    width: 650px;
+}
+
+.table2 {
+    height: 230px; 
+    border: 2px solid black;
+    width: 615px;
+    margin: 20px auto;
+}
+.DEPAR{
+    align-content: baseline;
+    font-weight: bold;
+    padding-top: 5px;
+}
+.TYOS{
+    height: 23px;
+    background-color: yellow;
+    text-align: right;
+    padding-right: 21px;
+    font-weight: bold;
+}
+.num{
+    text-align: right;
+    padding-right: 21px;
+}
+.num2{
+    text-align: right;
+    padding-right: 21px;
+    background-color: yellow;    
+}
+.yell{
+    background-color: yellow; 
+}
+.table2 thead{
+    height: 25px;
+    text-align: left;
+    font-weight: bold;
+    background-color: yellow;
+}
+.table2 th, td {
+    border: 2px solid black;
+    align-content: center;
+    padding-left: 9px;
+}
+
+table caption {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+/*footer paragraph with my name*/
+footer p {
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    margin-bottom: 10px;
+}
