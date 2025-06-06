@@ -1,0 +1,66 @@
+/*LAB 4.2 - USING <div>s AND STYLING TEXT*/
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin-left: -1px;
+}
+
+.navigation{
+    text-align: center;
+}
+h1{
+    margin-left: 40px;
+    margin-bottom: -10px;
+}
+
+nav ul {
+
+    padding: 0;
+}
+nav li {
+    display:inline-block;
+}
+nav a{
+    text-decoration: none;
+    color: #504750;
+    margin-left: 20px;
+}
+#mainPhoto img{
+    height: auto;
+    width: 100%;
+    margin-bottom: -22px;
+}
+#communities {
+    background: #E4DFDA;
+    color: #52414C;
+    margin-bottom: -22px; 
+}
+#communities h2{
+    margin: 20px;
+    margin-left: 70px;
+    padding-top: 60px;
+}
+
+#communities ul{
+    padding: 0;
+    margin-left: 46px;   
+}
+#communities li{
+    display:inline-block;
+    margin-left: 20px;
+    margin-bottom: 24px;
+}
+footer{
+    background: #52414C;
+    color: white;
+    font-size: 90%;
+    margin-bottom: -22px;
+}
+.bottom{
+    text-align: center;
+}
+footer p{
+    padding: 20px;
+    margin-left: 10px;
+}

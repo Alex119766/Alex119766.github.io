@@ -1,0 +1,184 @@
+@font-face {
+  font-family: 'Oswald';
+  src: url('../font/Oswald-VariableFont_wght.ttf') format('truetype');
+}
+html{
+    background-image: url("../images/pattern.jpg");
+    /*Here I invoked the gif for the cat footprints*/    
+    background-size: 70%;
+    /*I used 450px to repeat the gif multiple times, basically because It looks cuter*/    
+    font-family: 'Oswald';
+    font-size: 19px;
+    /*Setting the font size at 19px, not to big but not to small*/
+    background-color: rgb(248, 174, 255);
+   /*Same with choosing the color of the background, I tought it look cute */
+}
+body {
+    border: 4px solid black;
+    background-color: rgba(229, 240, 236, 0.741);
+    width: 900px;
+    box-shadow: 4px 9px 12px 6px black;
+/*Adding a black shadow to the body*/
+/*Using margin top and bottom at 20px just to not have the body too close 
+to the top and bottom of the browser. Also to visualize the shadow better.*/
+    margin-left: auto;
+    margin-right: auto;
+/*Using margin left and right to auto to center the body*/
+}
+header{
+    border-bottom: 4px solid black;
+    border-top: 4px solid black;
+    background-image: url("../images/cookingResized.jpg");
+    background-size: 100%;
+    height: 100px;
+    top: 0;
+    width: 900px;
+    position: sticky;
+}
+
+header h1{
+    font-size: 39px;
+    font-weight: 900;
+    text-align: center;
+    /*this margin bottom is to have the h3 near to the h1*/
+    color: rgb(61, 59, 185);
+    text-shadow: 3px 3px 5px #f15d0e;
+    /*here I choosed this color for the font of "Me and my cats"(h1)*/
+}
+nav{
+    border-bottom: 4px solid black;
+    border-top: 4px solid black;
+    height: 100px;
+    background-color: rgb(42, 47, 146);
+    position: sticky; 
+    top: 100px;
+    width: 900px;  
+}
+nav img{
+    width: 90px;
+    height: 82px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 12px;
+    margin-right: 15px;
+    /*Setting the image size and margins to have it where I think it looks 
+    better*/
+}
+nav h1{
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: -9px;
+    /*this margin bottom is to have the h3 near to the h1*/
+    color: rgb(240, 115, 57);
+    text-shadow: 3px 3px 5px red;
+    /*here I choosed this color for the font of "Me and my cats"(h1)*/
+}
+nav ul {
+    list-style-type: none;
+    margin-top: -55px;
+}
+
+nav ul li {
+
+    display: inline;
+    margin: 20px;
+
+}
+
+nav ul li a {
+    font-size: 23px;
+    color: darkgreen;
+    float:right;
+    margin-right:30px ;
+}
+
+nav ul li a:link {
+
+    color: rgb(226, 137, 43);
+}
+
+nav ul li a:visited {
+
+    color: rgb(240, 197, 44);
+}
+
+nav ul li a:hover {
+
+    color: rgb(225, 6, 6);
+    text-decoration: underline;
+}
+nav ul li a:active {
+
+    color: yellowgreen;
+    text-decoration: none;
+}
+main{
+    padding-left: 20px;
+    margin-right: 15px;
+    height: 2240px;
+    /*Setting the perfect height to fill my paragrahs and images
+    and margin and padding to not have them to close to the border*/
+
+}
+.Intro{
+    margin-top: 50px;
+    margin-bottom: 70px; 
+    text-align: center;   
+}
+.cats{
+    margin-bottom: 50px;
+}
+.NoQuestions{
+    margin-bottom: 15px;
+    text-align: center;
+}
+main h1{
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 35px;
+    text-decoration: underline;
+    /*Setting the size, boldness and margin of "Let me introduce you"(h1)
+    Then I added a line under the font as a decoration*/
+}
+.cats img{
+    float: left;
+    margin-bottom: 25px;
+    margin-right: 45px;
+    width:100%; 
+    height:330px;
+    /*Floating the images to the left to have my paragraphs at the right side
+    and the I just added some margins to not have them to close to the text*/
+}
+main h3{
+    font-style: italic;
+    margin-bottom: -10px;
+    /*Setting the name of the cats as italic and with a different font
+    to make it look different. The margin-bottom is for having 
+    the name of the cat closer to the paragraph*/
+}
+main h2{
+    font-size: 23px;
+    /*Adjusting the size of the font for "Important if you will take 
+    care of them"(h2)*/
+}
+
+footer{
+    text-align: left;
+    border-top: 4px solid black;
+    background-image: url("../images/choppingboard.jpg");
+    border-bottom: 1px solid black;
+    background-size: 100%;
+    color: white;
+    height: 100px;
+}
+footer p{
+    margin-top: 40px;
+    margin-left: 10px;
+}
+footer img{
+    margin-top: 25px;
+    margin-right: 30px;
+    width: 210px;
+    height: 50px;
+    float: right;
+}
