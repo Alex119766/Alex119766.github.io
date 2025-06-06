@@ -22,8 +22,8 @@ header{
     background-image: linear-gradient(45deg, white,rgb(241, 201, 126), pink, black);
 }
 header img{
-    width: 80px;
-    height: 92px;
+    width: 60px;
+    height: 52px;
     border-radius: 50%;
     float: left;
     margin-top: 14px;
@@ -54,7 +54,7 @@ main h1{
     margin-bottom: -10px;
 }
 main h1::first-letter {
-    font-size: 65px;
+    font-size: 20px;
 }
 main h2{
     margin-bottom: -5px;
