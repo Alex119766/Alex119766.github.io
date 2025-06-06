@@ -45,7 +45,7 @@ main{
     margin-right: 15px;
 }
 ul li a:hover{
-    text-decoration: underline;
+    text-decoration: none;
     color:green;
 }
 main h1{
@@ -53,9 +53,7 @@ main h1{
     font-weight: bold;
     margin-bottom: -10px;
 }
-main h1::first-letter {
-    font-size: 20px;
-}
+
 main h2{
     margin-bottom: -5px;
     font-size: 23px;
