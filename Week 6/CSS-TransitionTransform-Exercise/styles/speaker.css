@@ -31,7 +31,7 @@ header {
 	    30deg, #f6bb73 0%, #fffded 30%, white 50%, #fffded 80%, #f6bb73 100%);
 	background-image: linear-gradient(
 	    30deg, #f6bb73 0%, #fffded 30%, white 50%, #fffded 80%, #f6bb73 100%);
-}
+	}
 header h2 {
 	font-size: 175%;
 	color: #800000;
@@ -86,7 +86,9 @@ section p {
 /* the styles for the article */
 article {
 	padding: .5em 0;
+	float: right;
 }
+
 article h2 {
 	font-size: 115%;
 	padding: 0 0 .25em 0;
@@ -115,7 +117,7 @@ aside h3 {
 }
 aside img {
 	padding-bottom: 1em;
-	
+
 }
 
 #nav_list ul li a:hover {

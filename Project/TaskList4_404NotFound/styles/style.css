@@ -1,0 +1,203 @@
+@font-face {
+  font-family: 'Oswald';
+  src: url('../font/Oswald/Oswald-VariableFont_wght.ttf') format('truetype');
+}
+
+html{
+    background-image: url("../images/BBB.jpg");   
+    background-size: 100%;
+    /*I used 450px to repeat the gif multiple times, basically because It looks cuter*/    
+    font-family: 'Oswald';
+    font-size: 19px;
+   }
+body {
+    border: 4px solid black;
+    background-color: #e5f0ec;
+    width: 900px;
+    box-shadow: 4px 9px 12px 6px black;
+/*Adding a black shadow to the body*/
+/*Using margin top and bottom at 20px just to not have the body too close 
+to the top and bottom of the browser. Also to visualize the shadow better.*/
+    margin-left: auto;
+    margin-right: auto;
+/*Using margin left and right to auto to center the body*/
+}
+header{
+    border-bottom: 4px solid black;
+    border-top: 4px solid black;
+    background-image: url("../images/cookingResized.jpg");
+    background-size: 100%;
+    height: 100px;
+    top: 0;
+    width: 900px;
+    position: sticky;
+}
+
+header h1{
+    font-size: 39px;
+    font-weight: 900;
+    text-align: center;
+    /*this margin bottom is to have the h3 near to the h1*/
+    color: #333333;
+    text-shadow: 3px 3px 5px #f15d0e;
+    /*here I choosed this color for the font of "Me and my cats"(h1)*/
+}
+ div#SearchBar {
+    width: 150px;
+    height: 28px;
+    background-color: rgb(237, 236, 238);
+    border: 4px solid rgb(0, 0, 0);
+    position: absolute; 
+    right: 58px;
+    top: 32px; 
+}
+header img{
+    position: absolute;
+    margin-top: -64px;
+    width: 30px;
+    right: 22px;
+    height: 30px;
+}
+nav{
+    border-bottom: 4px solid black;
+    border-top: 4px solid black;
+    height: 100px;
+    background-color:#f4f1ee;
+    position: sticky; 
+    top: 100px;
+    width: 900px;  
+}
+nav img{
+    width: 90px;
+    height: 82px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 12px;
+    margin-right: 15px;
+    /*Setting the image size and margins to have it where I think it looks 
+    better*/
+}
+nav h1{
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: -9px;
+    /*this margin bottom is to have the h3 near to the h1*/
+    color: #f07339;
+    text-shadow: 3px 3px 5px #f15d0e;
+    /*here I choosed this color for the font of "Me and my cats"(h1)*/
+}
+nav ul {
+    font-family: Verdana;
+    list-style-type: none;
+    margin-top: -55px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 20px;
+}
+
+nav ul li a {
+    font-size: 23px;
+    float:right;
+    margin-right:30px ;
+    text-decoration: none;
+    color: #F4A261;
+}
+
+nav ul li a:visited {
+
+    color: #f0c52c;
+}
+
+nav ul li a:hover {
+
+    color: #f15d0e;
+    text-decoration: underline;
+}
+nav ul li a:active {
+
+    color: #9acd32;
+    text-decoration: none;
+}
+main{
+    padding-left: 20px;
+    margin-right: 15px;
+    height: 2240px;
+    /*Setting the perfect height to fill my paragrahs and images
+    and margin and padding to not have them to close to the border*/
+
+}
+.Intro{
+    margin-top: 50px;
+    margin-bottom: 70px; 
+    text-align: center;   
+}
+.Intro h1{
+    color: #c19e1f;
+}
+.cats{
+    margin-bottom: 50px;
+}
+.NoQuestions{
+    margin-bottom: 15px;
+    margin-top: 420px;
+    text-align: center;
+}
+.NoQuestions h2{
+    color: #C19E1F;
+    font-size: 28px;
+}
+
+main h1{
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 40px;
+    /*Setting the size, boldness and margin of "Let me introduce you"(h1)
+    Then I added a line under the font as a decoration*/
+}
+.cats img{
+    float: left;
+    margin-bottom: 25px;
+    margin-right: 45px;
+    width:100%; 
+    height:330px;
+    /*Floating the images to the left to have my paragraphs at the right side
+    and the I just added some margins to not have them to close to the text*/
+}
+.cats h3{
+    text-decoration: underline;
+    margin-bottom: -10px;
+    font-size: 25px;
+}
+
+footer{
+    text-align: left;
+    border-top: 4px solid black;
+    background-image: url("../images/choppingboard.jpg");
+    border-bottom: 1px solid black;
+    background-size: 100%;
+    color: white;
+    height: 100px;
+}
+footer p{
+    margin-top: 40px;
+    margin-left: 10px;
+}
+footer img{
+    margin-top: 30px;
+    margin-right: 40px;
+    margin-left: -20px;
+    width: 40px;
+    height: 40px;
+    float: right;
+}
+.tiktok{
+    width: 51px;
+    height: 51px;
+    margin-top: 26px;
+    margin-right: 34px;
+}
+.twitter{
+    width: 50px;
+}
