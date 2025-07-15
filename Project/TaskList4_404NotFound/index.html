@@ -9,7 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles/normalize.css" type="text/css">
     <link rel="stylesheet" href="styles/style.css" type="text/css">
-    <title> CEP </title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<title> CEP </title>
 	<!--setting the name of my website-->
 </head>
 <body>
@@ -17,24 +18,33 @@
         <h1>WELCOME!!!</h1>
 
 		<div id="SearchBar">
+			<form>
+				<input type="text" placeholder="Search...">
+				<button type="submit">
+					<img src="images/logoSearch.png" alt="LogoSearch" class="search-icon">
+				</button>
+			</form>
 		</div>
-		<img src="images/logoSearch.png" alt="LogoSearch">
 	</header>
 	<nav>
-		<img src="images/logo.png" alt="LogoRestaurant">
+		<section id="Logo">
+		<a href="index.html">
+			<img src="images/logo.png" alt="LogoRestaurant">
+		</a>
+		</section>
+		<section id="Space">
 			<h1>A culinary</h1>
 			<h1>new </h1>
 			<h1>experience</h1>
-            <ul>
-				<li><a href="index.html">FAQ</a></li>
-				<li><a href="index.html">Contact Us</a></li>
-				<li><a href="index.html">Menu</a></li>
-				<li><a href="index.html">About Us</a></li>
-                <li><a href="index.html">Home</a></li>
-            </ul>
+		</section>
+                <a href="index.html" id="Home">HOME</a>
+				<a href="AboutUs.html" id="AboutUs">ABOUT US</a>
+				<a href="Menu.html" id="Menu">MENU</a>
+				<a href="ContacUs.html" id="ContacUs">CONTACT US</a>
+				<a href="FAQ.html" id="FAQ">FAQ</a>
 	</nav>
 	<main>
-		<section class="Intro" id="top"> <!--Giving a class to this section to have-->
+		<section class="Intro"> <!--Giving a class to this section to have-->
 			<!--a more control only of the top part of the main-->
 			<h1 >Welcome to CEP – A Culinary Trip Through Colombia, Ethiopia & Peru</h1>
 			<p>At CEP, we invite you to experience a flavorful journey through three vibrant cultures. Each dish on our menu tells a story—rooted in tradition, crafted with passion, and served with warmth.</p>
@@ -64,8 +74,8 @@
 			class-->
 			<h2 >Are you a content creator with a passion for global cuisine and storytelling?</h2>
 			<p>We're looking for passionate food lovers and content creators who are ready to dive into the vibrant flavors of Colombian, Peruvian, and Ethiopian cuisine! Whether you're into TikTok taste tests, Instagram reels, or honest YouTube reviews, we want you to help us share the magic of CEP with the world.</p>
-			<p>If you're hungry for new experiences and love sharing them with your audience — <a href="index.html">contact us</a>! Let’s cook up something amazing together. 🍽️📸✨</b></p>
-			<p><a href="#top">Return to Top</a></p>
+			<p>If you're hungry for new experiences and love sharing them with your audience — <a href="ContacUs.html">contact us</a>! Let’s cook up something amazing together. 🍽️📸✨</b></p>
+			<p><a href="index.html">Return to Top</a></p>
 			<!--Appart from the instructions that I give in the <p> I also
 				added a link to a chart to know how much should the eat.-->
 		</section>
