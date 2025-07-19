@@ -91,7 +91,6 @@ header img{
 nav {
     position: sticky;
     top: 0;
-    z-index: 999; /* para que se mantenga arriba de todo */
     display: grid;
     grid-template-areas: "log spc hom abo men con faq";
     grid-template-rows: 1fr;
@@ -193,32 +192,32 @@ main h1{
 .Intro h1{
     color: #c19e1f;
 }
-.cats{
+.PrincipalContent{
     margin-bottom: 50px;
 }
-.NoQuestions{
+.Influencers{
     margin-bottom: 15px;
     margin-top: 100px;
     text-align: center;
 }
-.NoQuestions h2{
+.Influencers h2{
     color: #C19E1F;
     font-size: 28px;
 }
 
-.cats img{
+.PrincipalContent img{
     margin-bottom: 25px;
     margin-right: 45px;
     width:90%; 
     padding-left: 40px;
     height:330px;
 }
-.cats h3{
+.PrincipalContent h3{
     text-decoration: underline;
     margin-bottom: -10px;
     font-size: 25px;
 }
-.cats p{
+.PrincipalContent p{
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -287,11 +286,11 @@ footer img{
         height: 30px;
     }
 
-    .NoQuestions h2 {
+    .Influencers h2 {
         font-size: 1.3rem;
     }
 
-    .cats img {
+    .PrincipalContent img {
         text-align: center;
         width: 80%;
     }

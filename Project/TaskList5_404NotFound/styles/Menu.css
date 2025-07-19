@@ -90,7 +90,6 @@ header img{
 nav {
     position: sticky;
     top: 0;
-    z-index: 999; /* para que se mantenga arriba de todo */
     display: grid;
     grid-template-areas: "log spc hom abo men con faq";
     grid-template-rows: 1fr;

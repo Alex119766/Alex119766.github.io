@@ -89,7 +89,6 @@ header img{
 nav {
     position: sticky;
     top: 0;
-    z-index: 999; /* para que se mantenga arriba de todo */
     display: grid;
     grid-template-areas: "log spc hom abo men con faq";
     grid-template-rows: 1fr;
@@ -215,6 +214,46 @@ footer img{
 .twitter{
     width: 50px;
 }
+.faq-button {
+  background-color: #f4f1ee;
+  font-weight: bold;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 12px;
+  margin-top: 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #c19e1f;
+}
+
+.faq-section {
+  display: none;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.faq-subquestion {
+  background-color: #fff;
+  font-size: 1rem;
+  border: none;
+  text-align: left;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  color: #444;
+  margin-top: 5px;
+}
+
+.faq-content {
+  display: none;
+  padding: 10px 20px;
+  background-color: #fafafa;
+  border-left: 3px solid #c19e1f;
+  margin-bottom: 5px;
+  font-size: 0.95rem;
+}
+
 @media screen and (max-width: 600px) {
     nav{
         grid-template-rows: 1fr 1fr;

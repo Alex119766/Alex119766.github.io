@@ -93,7 +93,6 @@ header img{
 nav {
     position: sticky;
     top: 0;
-    z-index: 999; /* para que se mantenga arriba de todo */
     display: grid;
     grid-template-areas: "log spc hom abo men con faq";
     grid-template-rows: 1fr;
@@ -175,9 +174,6 @@ nav a:active {
     color: #9acd32;
     text-decoration: none;
 }
-
-
-
 main{
     padding-left: 20px;
     margin-right: 15px;
@@ -192,15 +188,15 @@ main{
 .Intro h1{
     color: #c19e1f;
 }
-.cats{
+.countries{
     margin-bottom: 50px;
 }
-.NoQuestions{
+.Influencers{
     margin-bottom: 15px;
     margin-top: 420px;
     text-align: center;
 }
-.NoQuestions h2{
+.Influencers h2{
     color: #C19E1F;
     font-size: 28px;
 }
@@ -210,14 +206,14 @@ main h1{
     margin-bottom: 30px;
     font-size: 40px;
 }
-.cats img{
+.countries img{
     float: left;
     margin-bottom: 25px;
     margin-right: 45px;
     width:100%; 
     height:330px;
 }
-.cats h3{
+.countries h3{
     text-decoration: underline;
     margin-bottom: -10px;
     font-size: 25px;
@@ -290,11 +286,11 @@ footer img{
         height: 30px;
     }
 
-    .NoQuestions h2 {
+    .Influencers h2 {
         font-size: 1.3rem;
     }
 
-    .cats img {
+    .countries img {
         height: auto;
     }
 

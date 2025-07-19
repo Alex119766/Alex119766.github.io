@@ -3,19 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Kal&Alex">
+    <meta name="author" content="404 Not found">
     <meta name="keywords" content="HTML, CSS, Web Design">
     <meta name="description" content="Assignment">
 	<link rel="stylesheet" href="styles/normalize.css" type="text/css">
     <link rel="stylesheet" href="styles/style.css" type="text/css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 	<title> CEP </title>
-	<!--setting the name of my website-->
 </head>
 <body>
 	<header >
         <h1>WELCOME!!!</h1>
-
 		<div id="SearchBar">
 			<form>
 				<input type="text" placeholder="Search...">
@@ -27,33 +25,31 @@
 	</header>
 	<nav>
 		<section id="Logo">
-		<a href="index.html">
-			<img src="images/logo.png" alt="LogoRestaurant">
-		</a>
+			<a href="index.html">
+				<img src="images/logo.png" alt="LogoRestaurant">
+			</a>
 		</section>
 		<section id="Space">
 			<h1>A culinary</h1>
 			<h1>new </h1>
 			<h1>experience</h1>
 		</section>
-                <a href="index.html" id="Home">HOME</a>
-				<a href="AboutUs.html" id="AboutUs">ABOUT US</a>
-				<a href="Menu.html" id="Menu">MENU</a>
-				<a href="ContacUs.html" id="ContacUs">CONTACT US</a>
-				<a href="FAQ.html" id="FAQ">FAQ</a>
+            <a href="index.html" id="Home">HOME</a>
+			<a href="AboutUs.html" id="AboutUs">ABOUT US</a>
+			<a href="Menu.html" id="Menu">MENU</a>
+			<a href="ContacUs.html" id="ContacUs">CONTACT US</a>
+			<a href="FAQ.html" id="FAQ">FAQ</a>
 	</nav>
 	<main>
-		<section class="Intro"> <!--Giving a class to this section to have-->
-			<!--a more control only of the top part of the main-->
+		<!-- Searchable Section 1 I have included only the section(1-3) below for now to be located via the search tool  -->
+		<section class="Intro search-section"> 
 			<h1 >Welcome to CEP – A Culinary Trip Through Colombia, Ethiopia & Peru</h1>
 			<p>At CEP, we invite you to experience a flavorful journey through three vibrant cultures. Each dish on our menu tells a story—rooted in tradition, crafted with passion, and served with warmth.</p>
 			<p>Discover the richness of Colombian spices, the freshness of Peruvian cuisine, and the depth of Ethiopian flavors—all under one roof.</p>
 			<p><b><i>>Ready for a trip of new flavors?!!!!!</i></b></p>
 		</section>
-
-		<section class = "cats"> <!--Giving a class to this section to have-->
-			<!--more control of the cats photos and text-->
-			
+		<!-- Searchable Section 2 -->
+		<section class = "countries search-section"> 
 			<h3>A Taste of Colombia🥩</h3>
 			<p>From the lush Andes to the Caribbean coast, Colombian cuisine is a fusion of cultures.At CEP, we serve traditional dishes like Bandeja Paisa, Ajiaco, and Arepas, prepared with authentic ingredients and love.</p>
 			<p>Don’t miss our homemade empanadas and refreshing aguapanela.</p>
@@ -68,23 +64,52 @@
 			<img src="images/peruFood.jpg" alt="Peru" >
 			<!--Here I give a brief description of each cat and images of them-->
 		</section>
-		
-		<section class ="NoQuestions" ><!--Giving the low part of the main a
-			class-->
+		<!-- Searchable Section 3 -->
+		<section class ="Influencers search-section" >
 			<h2 >Are you a content creator with a passion for global cuisine and storytelling?</h2>
 			<p>We're looking for passionate food lovers and content creators who are ready to dive into the vibrant flavors of Colombian, Peruvian, and Ethiopian cuisine! Whether you're into TikTok taste tests, Instagram reels, or honest YouTube reviews, we want you to help us share the magic of CEP with the world.</p>
 			<p>If you're hungry for new experiences and love sharing them with your audience — <a href="ContacUs.html">contact us</a>! Let’s cook up something amazing together. 🍽️📸✨</b></p>
 			<p><a href="index.html">Return to Top</a></p>
-			<!--Appart from the instructions that I give in the <p> I also
-				added a link to a chart to know how much should the eat.-->
 		</section>
+		<p id="no-results" style="display: none; color: red; text-align: center;">No matching sections found.</p>
 	</main>
-	<footer> <!--I used the footer just to write my name and year-->
+	<footer> 
 		<img src="images/logoInstagram.png" alt="SocialLinks">
 		<img class="twitter" src="images/logoTwitter.png" alt="SocialLinks">
 		<img src="images/logoFacebook.png" alt="SocialLinks">
 		<img class="tiktok" src="images/logoTiktok.png" alt="SocialLinks">
 		<p>2025&copy;CEP GROUP INC.   |  ALL RIGHTS RESERVED</p>
 	</footer>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+		const form = document.querySelector("#SearchBar form");
+		const input = document.querySelector("#SearchBar input[type='text']");
+		const sections = document.querySelectorAll(".search-section");
+		const noResults = document.getElementById("no-results");
+
+		form.addEventListener("submit", function (event) {
+			event.preventDefault();
+			const keyword = input.value.trim().toLowerCase();
+			let found = false;
+
+			if (keyword) {
+			sections.forEach(section => {
+				const content = section.textContent.toLowerCase();
+				const match = content.includes(keyword);
+				section.style.display = match ? "block" : "none";
+				if (match) found = true;
+			});
+			noResults.style.display = found ? "none" : "block";
+			} else {
+			sections.forEach(section => {
+				section.style.display = "block";
+			});
+			noResults.style.display = "none";
+			}
+		});
+		});
+	</script>
+
 </body>
 </html>
