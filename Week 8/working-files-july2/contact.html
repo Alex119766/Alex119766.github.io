@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homepage</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Sepideh">
+        <meta name="keywords" content="HTML, CSS, Web Design">
+        <meta name="description" content="Homepage of my Little Store Website">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/normalize.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <header id="top">
+             <img src="images/logo.jpg" alt="website logo" width="90" height="90">
+             <h1>My Little Store Website</h1>
+             <h2>Welcome to my Website</h2>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown"><a href="news.html" class="dropbtn">News</a>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- approved -->
+        <main>
+            <form action="process.php" method="get">
+                <fieldset>
+                    <legend>Personal Info:</legend>
+                <label for="fName">First Name:</label>
+                <input type="text" id="fName" name="fName" value="John" required autofocus><br><br>
+                <label for="lName">Last Name:</label>
+                <input type="text" id="lName" name="lName" value="Doe" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br><br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                </fieldset>
+                <input type="radio" name="gender" id="female" value="Female">
+                <label for="female">Female</label><br>
+                <input type="radio" name="gender" id="male" value="Male">
+                <label for="male">Male</label><br>
+                <input type="radio" name="gender" id="other" value="Other">
+                <label for="other">Other</label><br><br><br>
+                <p>choose your commute way:</p>
+                <input type="checkbox" name="commute" id="car" name="commute" value="Car">
+                <label for="car">Car</label><br>
+                <input type="checkbox" name="commute" id="train" name="commute" value="Train">
+                <label for="train">Train</label><br>
+                <input type="checkbox" name="commute" id="bike" name="commute" value="Bike">
+                <label for="bike">Bike</label><br><br><br>
+                <label for="browsers">Your Browsers:</label>
+                <select name="browsers" id="browsers">
+                    <optgroup label="Mac">
+                    <option value="chrome ">Google Chrome</option>
+                    <option value="firefox">Mozilla Firefox</option>
+                    <option value="Safari">Safari</option>
+                    </optgroup>
+                    <optgroup label="Windows">
+                    <option value="IE">Internet Explorer</option>
+                    <option value="edge">Microsoft Edge</option>
+                    </optgroup>
+                </select><br><br><br>
+                <p>Choose your favorite Car:</p>
+                <input list="cars">
+                <datalist id="cars">
+                    <option value="Fiat">
+                    <option value="Ford">
+                    <option value="Toyota">
+                    <option value="Mazda"> 
+                </datalist><br><br><br>
+                <label for="comment">Comment:</label>
+                <textarea name="comment" id="comment" rows="10" cols="30">Provide Your Comment:</textarea><br><br>
+                <input type="submit" value="Submit"> 
+                <button type="button" onclick="alert('Hello There!')">Click Here!</button>  
+            </form>
+        </main>
+        <footer>
+            <p>Author:Sepideh</p>
+            <p>Copyright is resevered &copy;&nbsp;2025</p>
+            <p><a href="#top">Back to Top</a></p>
+            <p>Trems and Conditions</p>
+
+        </footer>
+
+    </body>
+</html>

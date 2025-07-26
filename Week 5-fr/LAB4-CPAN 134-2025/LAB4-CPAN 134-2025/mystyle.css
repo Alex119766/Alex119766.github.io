@@ -1,0 +1,77 @@
+/*LAB 4.2 - USING <div>s AND STYLING TEXT*/
+
+@font-face {
+  font-family: 'EduNSWACTCursive';
+  src: url('font/EduNSWACTCursive-VariableFont_wght.ttf') format('truetype');
+}
+body{
+    font-family: 'EduNSWACTCursive', cursive;
+    background-color: aquamarine;
+    margin-left: -1px;
+}
+
+.navigation{
+    text-align: center;
+}
+h1{
+    text-align: center;
+    color: #ee5a2d;
+    text-decoration: underline;
+    text-shadow: 1px 1px 2px #b03434;
+}
+
+nav ul {
+    padding: 0;
+}
+nav li {
+    display:inline-block;
+    text-transform: uppercase;
+}
+nav a{
+    text-decoration: none;
+    color: #504750;
+    margin-left: 20px;
+}
+#mainPhoto img{
+    height: auto;
+    width: 100%;
+    margin-bottom: -22px;
+    border: 10px solid #e112bb;
+}
+#communities {
+    background: #b77ee9;
+    color: #d8ee2d;
+    text-shadow: 1px 1px 2px #b03434;
+    margin-bottom: -16px; 
+    margin-right: -22px;
+    text-align: center;
+}
+#communities h2{
+    margin: 20px;
+    padding-top: 60px;
+}
+
+#communities ul{
+    padding: 0;  
+}
+#communities li{
+    display:inline-block;
+    margin-left: 20px;
+    margin-bottom: 24px;
+}
+ul li a:hover{
+    text-decoration: underline;
+    color:rgb(157, 130, 238);
+}
+footer{
+    background: #52414C;
+    color: white;
+    font-size: 90%;
+    margin-bottom: -22px;
+    background-image: linear-gradient(45deg, #ff9a9e, #fad0c4,white);
+    margin-right: -22px;
+}
+footer p{
+    padding: 20px;
+    margin-left: 10px;
+}

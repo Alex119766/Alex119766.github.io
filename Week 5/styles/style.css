@@ -1,0 +1,139 @@
+html{
+    background-image: url("../images/footprints.gif");
+    /*Here I invoked the gif for the cat footprints*/    
+    background-size: 450px;
+    /*I used 450px to repeat the gif multiple times, basically because It looks cuter*/    
+    font-family: sans-serif;
+    font-size: 19px;
+    /*Setting the font size at 19px, not to big but not to small*/
+    background-color: rgb(248, 174, 255);
+   /*Same with choosing the color of the background, I tought it look cute */
+}
+body {
+    border: 4px solid black;
+/*Adding a border to the body*/
+    width: 800px;
+/*Setting the width of the body to be 800px to fit all the paragraphs and images*/
+    box-shadow: 4px 9px 12px 6px black;
+/*Adding a black shadow to the body*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+/*Using margin top and bottom at 20px just to not have the body too close 
+to the top and bottom of the browser. Also to visualize the shadow better.*/
+    margin-left: auto;
+    margin-right: auto;
+/*Using margin left and right to auto to center the body*/
+}
+header{
+    border-bottom: 4px solid black;
+    /* Giving a line to separate the header from the main*/
+    border-top: 1px solid;
+    /*In order to have the background image fill all the header I 
+    had to add a thin border top, otherwise the background image
+    wasn't able to fill the entire header*/
+    background-image: url("../images/sakura.jpg");
+    /*invoking the image with a sakura tree pattern that I found on the 
+    internet*/
+}
+header img{
+    width: 100px;
+    height: 92px;
+    border-radius: 50%;
+    float: left;
+    margin-top: 14px;
+    margin-left: 12px;
+    margin-right: 15px;
+    /*Setting the image size and margins to have it where I think it looks 
+    better*/
+}
+header h1{
+    font-size: 39px;
+    font-weight: 900;
+    margin-bottom: -27px;
+    /*this margin bottom is to have the h3 near to the h1*/
+    color: rgb(103, 2, 82);
+    /*here I choosed this color for the font of "Me and my cats"(h1)*/
+}
+header h3{
+    font-size: 22px;
+    font-weight: 900;
+    /*Changing size and boldness of h3(I don't know how but I ended up with 
+    with them)*/
+}
+main{
+    padding-left: 20px;
+    margin-right: 15px;
+    height: 2740px;
+    /*Setting the perfect height to fill my paragrahs and images
+    and margin and padding to not have them to close to the border*/
+}
+.Intro{
+    margin-top: 50px;
+    margin-bottom: 70px; 
+    text-align: center;   
+}
+.cats{
+    margin-bottom: 50px;
+}
+.NoQuestions{
+    margin-bottom: 15px;
+    text-align: center;
+}
+main h1{
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 35px;
+    text-decoration: underline;
+    /*Setting the size, boldness and margin of "Let me introduce you"(h1)
+    Then I added a line under the font as a decoration*/
+}
+.cats img{
+    float: left;
+    margin-bottom: 25px;
+    margin-right: 45px;
+    /*Floating the images to the left to have my paragraphs at the right side
+    and the I just added some margins to not have them to close to the text*/
+}
+main h3{
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: -10px;
+    /*Setting the name of the cats as italic and with a different font
+    to make it look different. The margin-bottom is for having 
+    the name of the cat closer to the paragraph*/
+}
+main h2{
+    font-size: 23px;
+    /*Adjusting the size of the font for "Important if you will take 
+    care of them"(h2)*/
+}
+
+main ul li{
+    margin-bottom: 5px;
+    text-decoration: none;  
+    /*Removing the underline of the text from the list of instructions
+    for each cat feeding time*/
+}
+
+main section ul li a{
+    color: rgb(112, 49, 249);
+    font-weight: bold;
+    text-decoration: none;
+    /*Setting the color of the items of the list, making it bold 
+    and removing the underline*/
+}
+ul li a:hover{
+    text-decoration: underline;
+    color:violet;
+    /*Adding an underline and changing the color only when the user moves the cursor through
+    the options of the list */
+}
+footer{
+    text-align: center;
+    border-top: 4px solid black;
+    background-image: url("../images/sakura.jpg");
+    border-bottom: 1px solid black;
+    /*Making the text of the footer to be on the center, adding the image with the sakura pattern and
+    doing the same as I did with the header, where I had to use a thin border to make the image fill
+    all the footer block*/
+}
