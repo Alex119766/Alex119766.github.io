@@ -1,0 +1,293 @@
+@font-face {
+  font-family: 'Oswald';
+  src: url('../font/Oswald/Oswald-VariableFont_wght.ttf') format('truetype');
+}
+
+html{
+    background-color: #204034;
+    font-family: 'Oswald';
+    font-size: 120%;
+   }
+body {
+    border: 4px solid black;
+    background-color: #e5f0ec;
+    width: 90%;
+    max-width: 900px;
+    font-size: 1rem;
+    box-shadow: 4px 9px 12px 6px black;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    border-bottom: 4px solid black;
+    border-top: 4px solid black;
+    background-image: url("../images/cookingResized.jpg");
+    background-size: 100%;
+    height: 100px;
+    top: 0;
+    width: 100%;  
+    position: sticky;
+}
+
+header h1{
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+    color: #333333;
+    text-shadow: 3px 3px 5px #f15d0e;
+}
+
+header img{
+    position: absolute;
+    margin-top: -64px;
+    width: 30px;
+    right: 22px;
+    height: 30px;
+}
+nav {
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-areas: "log spc hom abo men con faq";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1.1fr 1fr;
+    border-bottom: 4px solid black;
+    border-top: 4px solid black;
+    height: 100px;
+    background-color: #f4f1ee;
+    width: 100%;
+}
+#Logo{
+    grid-area: log;
+}
+#Logo img{
+    width: 70%;
+    height: 80%;
+    margin-top: 10px;
+    margin-left: 12px;
+    margin-right: 15px;
+}
+#Space{
+    grid-area: spc;
+}
+#Space h1{
+    font-size: 1.04rem;
+    font-weight: 900;
+    margin-bottom: -9px;
+    color: #f07339;
+    text-shadow: 3px 3px 5px #f15d0e;
+    margin-left: -11%;
+}
+#Home{
+    grid-area: hom;
+    padding-top: 30%;
+    padding-left: 40%;
+}
+#AboutUs{
+    grid-area: abo;
+    padding-top: 30%;
+    padding-left: 14%;
+}
+#Menu{
+    grid-area: men;
+    padding-top: 30%;
+    padding-left: 30%;
+}
+#ContacUs{
+    grid-area: con;
+    padding-top: 28%;
+    padding-left: 3%;
+}
+#FAQ{
+    grid-area: faq;
+    padding-top: 31%;
+    padding-left: 30%;
+}
+
+
+
+nav a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #F4A261;
+    font-family: Verdana;
+}
+
+nav a:visited {
+
+    color: #f0c52c;
+}
+
+nav a:hover {
+
+    color: #f15d0e;
+    text-decoration: underline;
+}
+nav a:active {
+
+    color: #9acd32;
+    text-decoration: none;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 30px;
+    padding-left: 60px;
+    margin-right: 15px;
+    height: 3240px;
+    grid-gap: 16px;
+    grid-template-areas:
+            "map map"
+            "sec1 sec2"
+            "sec3 sec4"
+            "sec5 sec6"
+            "sec7 sec8"
+            "sec9 sec10"
+            "inf inf"; 
+}
+main h1{
+    color: #c19e1f;
+}
+#mapa{
+    grid-area:map;
+    text-align: center;
+}
+#sc1{ 
+    grid-area: sec1; 
+}
+#sc2{ 
+    grid-area: sec2; 
+}
+#sc3{ 
+    grid-area: sec3; 
+}
+#sc4{ 
+    grid-area: sec4; 
+}
+#sc5{ 
+    grid-area: sec5; 
+}
+#sc6{ 
+    grid-area: sec6; 
+}
+#sc7{ 
+    grid-area: sec7; 
+}
+#sc8{ 
+    grid-area: sec8; 
+}
+#sc9{ 
+    grid-area: sec9; 
+}
+#sc10{ 
+    grid-area: sec10; 
+}
+#Influencers{
+    grid-area: inf;
+}
+footer{
+    text-align: left;
+    border-top: 4px solid black;
+    background-image: url("../images/choppingboard.jpg");
+    border-bottom: 1px solid black;
+    background-size: 100%;
+    color: white;
+    height: 100px;
+}
+footer p{
+    margin-top: 40px;
+    margin-left: 10px;
+}
+footer img{
+    margin-top: 30px;
+    margin-right: 40px;
+    margin-left: -20px;
+    width: 5%;
+    height: 40%;
+    float: right;
+}
+.tiktok{
+    width: 6%;
+    height: 50%;
+    margin-top: 26px;
+    margin-right: 34px;
+}
+.twitter{
+    width: 50px;
+}
+
+@media screen and (max-width: 600px) {
+     nav{
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+                "log spc hom abo men"
+                "log spc con con faq ";
+    }
+    nav a{
+        font-size: 0.65rem;
+
+    }
+    #ContacUs{
+        grid-area: con;
+        padding-top: 10%;
+        padding-left: 30%;
+    }
+    #FAQ{
+        grid-area: faq;
+        padding-top: 20%;
+        padding-left: 5%;
+    }
+
+    main{
+        font-size: 0.9rem;
+        grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 30px;
+    padding-left: 60px;
+    margin-right: 15px;
+    height: 4740px;
+    grid-gap: 16px;
+    grid-template-areas:
+            "map map"
+            "sec1 sec1"
+            "sec2 sec2"
+            "sec3 sec3"
+            "sec4 sec4"
+            "sec5 sec5"
+            "sec6 sec6"
+            "sec7 sec7"
+            "sec8 sec8"
+            "sec9 sec9"
+            "sec10 sec10"
+            "inf inf"; 
+    }
+    main h1{
+        font-size: 1.5rem;
+    }
+    #mapa{
+        
+    }
+   #mapa iframe{
+     width: 90%;
+     height: 70%;
+   }
+
+    footer {
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    footer p {
+        margin-top: 10px;
+    }
+    footer img,
+    .tiktok,
+    .twitter {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+    }
+}

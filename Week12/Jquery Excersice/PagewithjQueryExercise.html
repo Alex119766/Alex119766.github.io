@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Capital Name Toggle</title>
+    <script src="jquery.js"></script>
+    <style>
+        .container {
+            border: 2px solid red;
+            padding: 20px;
+            width: 300px;
+        }
+
+        .hover-yellow:hover {
+            background-color: yellow;
+        }
+
+        button {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h4>Create Below Page</h4>
+    <div class="container" id="mainContainer">
+        <h5>Country:</h5>
+        <p>CANADA</p>
+
+        <h5>Capital:</h5>
+        <p id="capitalName">OTTAWA</p>
+
+        <button id="hideBtn">Hide capital name</button><br>
+        <button id="showBtn">Show capital name</button><br>
+        <button id="toggleBtn">Toggle</button><br>
+
+        <h5 id="hoverPara" class="hover-yellow">Hover on this paragraph for Yellow</h5>
+        <h5 id="bgImageTrigger">Click on this paragraph for Background image.</h5>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $("#hideBtn").click(function() {
+                $("#capitalName").hide();
+            });
+
+            $("#showBtn").click(function() {
+                $("#capitalName").show();
+            });
+
+            $("#toggleBtn").click(function() {
+                $("#capitalName").toggle();
+            });
+
+            $("#bgImageTrigger").click(function() {
+                $("#mainContainer").css({
+                    "background-image": "url('joker.webp')",
+                    "background-size": "cover",
+                    "background-position": "center",
+                    "color": "white"
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="404 not found">
+	<meta name="keywords" content="HTML, CSS, Web Design">
+    <meta name="description" content="Assignment">
+	<link rel="stylesheet" href="styles/normalize.css" type="text/css">
+    <link rel="stylesheet" href="styles/AboutUs.css" type="text/css">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<title> CEP </title>
+	<!--setting the name of my website-->
+</head>
+<body>
+	<header >
+        <h1>ABOUT US</h1>
+	</header>
+	<nav>
+		<section id="Logo">
+		<a href="index.html">
+			<img src="images/logo.png" alt="LogoRestaurant">
+		</a>
+		</section>
+		<section id="Space">
+			<h1>A culinary</h1>
+			<h1>new </h1>
+			<h1>experience</h1>
+		</section>
+                <a href="index.html" id="Home">HOME</a>
+				<a href="AboutUs.html" id="AboutUs">ABOUT US</a>
+				<a href="Menu.html" id="Menu">MENU</a>
+				<a href="ContacUs.html" id="ContacUs">CONTACT US</a>
+				<a href="FAQ.html" id="FAQ">FAQ</a>
+	</nav>
+	<main>
+		
+
+		<section class="Intro"> <!--Giving a class to this section to have-->
+			
+		</section>
+
+		<section class = "PrincipalContent">
+			<section class="image-slider">
+       <div class="slider-container">
+        <img src="images/OurHistory.webp" alt="Colombia" class="slide active">
+         <img src="images/slider.png" alt="Dish 2" class="slide">
+         <img src="images/slider2.png" alt="Dish 3" class="slide">
+        </div>
+        <button class="prev" onclick="prevSlide()">❮</button>
+        <button class="next" onclick="nextSlide()">❯</button>
+      </section>
+
+			<p>Welcome to CEP, where culture meets flavor. Our name stands for Colombia, Ethiopia, and Peru three rich culinary traditions brought together under one roof. At CEP, we celebrate the heritage and diversity of each country by offering authentic dishes prepared with care, passion, and respect for tradition.</p>
+			<p>Our mission is to give our guests more than just a meal we want to offer a journey. Whether you're tasting a comforting ajiaco, a flavorful doro wat, or a vibrant bandeja paisa, every dish tells a story. We believe that food is a powerful way to connect people, and we’re proud to create a space where different cultures can be explored through the senses.</p>
+			<p>We work closely with chefs and cooks from each country, using traditional techniques and high-quality ingredients to ensure every plate is as genuine as it is delicious. Whether you’re a curious first-timer or a nostalgic traveler missing home, CEP is here to welcome you. Come hungry. Leave inspired.</p>
+		<section class ="Influencers" >
+			<h2 >Are you a content creator with a passion for global cuisine and storytelling?</h2>
+			<p>We're looking for passionate food lovers and content creators who are ready to dive into the vibrant flavors of Colombian, Peruvian, and Ethiopian cuisine! Whether you're into TikTok taste tests, Instagram reels, or honest YouTube reviews, we want you to help us share the magic of CEP with the world.</p>
+			<p>If you're hungry for new experiences and love sharing them with your audience — <a href="ContacUs.html">contact us</a>! Let’s cook up something amazing together. 🍽️📸✨</b></p>
+			<p><a href="AboutUs.html">Return to Top</a></p>
+		</section>
+	</main>
+	<footer> 
+  <a href="https://www.instagram.com" target="_blank">
+    <img src="images/logoInstagram.png" alt="Instagram">
+  </a>
+  <a href="https://www.twitter.com" target="_blank">
+    <img class="twitter" src="images/logoTwitter.png" alt="Twitter">
+  </a>
+  <a href="https://www.facebook.com" target="_blank">
+    <img src="images/logoFacebook.png" alt="Facebook">
+  </a>
+  <a href="https://www.tiktok.com" target="_blank">
+    <img class="tiktok" src="images/logoTiktok.png" alt="TikTok">
+  </a>
+  <p>2025&copy;CEP GROUP INC. | ALL RIGHTS RESERVED</p>
+</footer>
+ <script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.slide');
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove('active');
+      if (i === index) {
+        slide.classList.add('active');
+      }
+    });
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  }
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festivals</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: rgb(34, 123, 255);
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: 2px solid black;
+            border-radius: 8px;
+            background-color: lightyellow;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: gold;
+        }
+        .festival-container {
+            border: 2px solid gray;
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+        }
+        img {
+            width: 300px;
+            height: auto;
+            border: 2px solid black;
+            margin: 10px 0;
+        }
+        footer {
+            margin-top: 50px;
+            padding: 10px;
+            background-color: rgb(34, 123, 255);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Festivals</h1>
+    <div class="festival-container" id="holliday1">
+
+    </div>
+    <div class="festival-container" id="holliday2">
+
+    </div>
+    <div class="festival-container" id="holliday3">
+
+    </div>
+    <Button id="button1">HOLIDAY1</Button>
+    <Button id="button2">HOLIDAY2</Button>
+    <Button id="button3">HOLIDAY3</Button>
+    <br>
+    <Button id="buttonc1">CLEAR <br> HOLIDAY1</Button>
+    <Button id="buttonc2">CLEAR <br> HOLIDAY2</Button>
+    <Button id="buttonc3">CLEAR <br> HOLIDAY3</Button>
+    <footer>&copy; 2025 Andres Mendoza</footer>
+    <script>
+        const buto = [document.getElementById("button1"),
+                    document.getElementById("button2"),
+                    document.getElementById("button3")];
+        const butoc = [document.getElementById("buttonc1"),
+                    document.getElementById("buttonc2"),
+                    document.getElementById("buttonc3")];
+        const route = ["fest1.jpeg","fest2.jpeg","fest3.jpeg"];
+        const text = [["The Rio Carnival parade is a vibrant and elaborate display of Brazilian culture, featuring samba schools competing in the Sambadrome",
+                    " These schools, divided into leagues, parade elaborate floats, dancers, and drummers, showcasing their chosen themes.",
+                    "The competition is intense, with schools vying for the championship title and the prestige that comes with it."],
+                    ["The Chinese Lantern Festival, also known as the Spring Lantern Festival, is a traditional Chinese celebration marking the end of the Chinese New Year festivities.",
+                    " It's held on the 15th day of the first month in the lunar calendar. This year, that falls on Friday, September 19, 2025.",
+                    "The festival is known for its beautiful lantern displays, often featuring intricate designs and themes."],
+                    ["Valentine's Day, celebrated annually on February 14th, is a day to express love and affection, often through gifts like flowers, chocolates, and cards.",
+                    "Christian feast day honoring a martyr named Valentine and has also absorbed elements of the ancient Roman festival Lupercalia, which celebrated fertility and matchmaking.",
+                    "Over time, it has evolved into a secular celebration of romantic love and companionship."]];
+        const div = [document.getElementById("holliday1"),document.getElementById("holliday2"),document.getElementById("holliday3")];
+        for (let index = 0; index < buto.length; index++) {
+            buto[index].addEventListener("click",() => ShowFest(index));
+        }
+        for (let index = 0; index < butoc.length; index++) {
+            butoc[index].addEventListener("click",() => ClearFest(index));
+        }
+        //for each
+        function ShowFest (i){
+            const Image = document.createElement("img");
+            Image.src = route[i];
+            div[i].appendChild(Image);
+            for (let index = 0; index < text.length; index++) {
+                const Text = document.createElement("p");
+                Text.textContent= text[i][index];
+                div[i].appendChild(Text);
+            }
+            buto[i].disabled = true; 
+        }
+        function ClearFest (i){
+            div[i].textContent = "";
+            buto[i].disabled = false; 
+        }
+    </script>
+</body>
+</html>

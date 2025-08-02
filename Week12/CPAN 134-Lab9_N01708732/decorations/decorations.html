@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>Halloween Store</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Andres">
+        <meta name="keywords" content="HTML, CSS, Web Design">
+        <meta name="description" content="Lab3">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles/normalize.css" type="text/css">
+        <link rel="stylesheet" href="styles/main.css" type="text/css">
+		<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../js/slicknav.min.js"></script>
+        <script src="../js/slide_show.js"></script>
+
+</head>
+
+<body>
+	<header>
+		<a href="../index.html">
+		    <img src="../images/pumpkin.gif" alt="Pumpkin" width="90" height="90">
+        </a>
+			<h1>The Halloween Store</h1>
+            <h3>For the little Goblin in all of us!</h3>
+	</header>
+    <nav id="mobile_menu"></nav>
+	<nav id ="navbar">
+            <ul>
+				<li><a href="../index.html" >Home</a></li>
+				<li><a href="../produtcs.html">Product List</a></li>
+				<li><a href="../personal/index.html">Personal</a></li>
+				<li>
+                    <a href="decorations.html" id="current">Decorating Ideas</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Indoor</a></li>
+                        <li><a href="#">Outdoor</a></li>
+                        <li><a href="#">Lighting</a></li>
+                        <li><a href="#">Special FX</a></li>
+                    </ul>
+                </li>
+                <li><a href="../email.html">Join Email</a></li>
+            </ul>
+	</nav>
+	<main>
+		<aside>
+			<nav id="nav_list">
+				<ul>
+					<li><a href="../props.html">Outdoor</a></li>
+					<li><a href="../index.html">Indoor</a></li>
+					<li><a href="../special.html">Table</a></li>
+					<li><a href="../index.html">Treats</a></li>
+				</ul>
+			</nav>
+		</aside>
+		<section>
+		    <h1>Some of my favorite decorating ideas</h1>
+            <p id="caption">Spooky Pumpkin</p>
+            <div id="slides" style="display: none;">
+                    <img src="carved_pumpkin.jpg" alt="Spooky Pumpkin" >
+                    <img src="fireplace.jpg" alt="Fire Place">
+                    <img src="front_door.jpg" alt="Front Door">
+                    <img src="raven_mantel.jpg" alt="Raven Mantel">
+                    <img src="table_setting.jpg" alt="Table Setting">
+                </div>
+            <img id="slide" src="carved_pumpkin.jpg" alt="Indoor Decoration" style="width:380px">
+             
+        </section>
+        
+	</main>
+	<footer>
+		<script src="../js/days_to_halloween.js"></script>
+   </footer>
+</body>
+</html>

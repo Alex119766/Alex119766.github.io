@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="404 not found" />
+  <meta name="keywords" content="HTML, CSS, Web Design" />
+  <meta name="description" content="Assignment" />
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/Menu.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <title>CEP</title>
+</head>
+
+<body>
+  <header>
+    <h1>MENU</h1>
+  </header>
+
+  <nav>
+    <section id="Logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="LogoRestaurant" />
+      </a>
+    </section>
+    <section id="Space">
+      <h1>A culinary</h1>
+      <h1>new</h1>
+      <h1>experience</h1>
+    </section>
+    <a href="index.html" id="Home">HOME</a>
+    <a href="AboutUs.html" id="AboutUs">ABOUT US</a>
+    <a href="Menu.html" id="Menu">MENU</a>
+    <a href="ContacUs.html" id="ContacUs">CONTACT US</a>
+    <a href="FAQ.html" id="FAQ">FAQ</a>
+  </nav>
+
+  <main>
+    <section id="intro-text">
+      <p>
+        At CEP, each dish is a celebration of culture, tradition, and taste. Our menu brings together the culinary gems of Colombia, Ethiopia, and Peru, offering you a unique opportunity to travel across continents without leaving your seat.
+      </p>
+      <p>
+        Whether you're craving the bold spices of East Africa, the comforting flavors of the Andes, or the vibrant street food of Latin America, you'll find something here to fall in love with. Every plate is crafted with authentic ingredients and time-honored recipes passed down through generations.
+      </p>
+      <p>Ready to discover your new favorite dish? Scroll down, explore, and let your taste buds do the traveling.</p>
+    </section>
+
+    <section id="menu-list" class="search-section">
+      <!-- Colombian Menu -->
+      <div  id="sc1" class="menu-item" data-tags="ajiaco chicken soup colombia potato corn avocado">
+        <img src="images/MenuImages/ColombianAjiaco.webp" alt="Colombian Ajiaco" />
+        <p><b>Ajiaco</b><br>A comforting chicken and potato soup from Bogotá, flavored with corn, avocado, capers, and guasca herb.</p>
+      </div>
+
+      <div  id="sc2" class="menu-item" data-tags="bandeja paisa beef rice egg chorizo plantain pork beans colombia platter">
+        <img src="images/MenuImages/ColombianBandejaPaisa.jpg" alt="Bandeja Paisa" />
+        <p><b>Bandeja Paisa</b><br>A generous platter native to Antioquia with steak, chorizo, pork belly, egg, rice, beans, plantain, and avocado.</p>
+      </div>
+
+      <div  id="sc3" class="menu-item" data-tags="colombian patty beef potato fried snack turnover">
+        <img src="images/MenuImages/ColombianPatty.jpeg" alt="Colombian Patty" />
+        <p><b>Colombian Patty</b><br>Crispy turnover filled with seasoned ground beef and potatoes, served with ají sauce.</p>
+      </div>
+      
+      <div id="sc4" class="menu-item" data-tags="sancocho stew chicken beef yucca corn plantain colombia">
+        <img src="images/MenuImages/ColombianStewSancocho.jpeg" alt="Sancocho" />
+        <p><b>Sancocho</b><br>Hearty stew of chicken, beef, yuca, plantain, and corn, seasoned with fresh herbs.</p>
+      </div>
+
+      <!-- Ethiopian Menu -->
+      <div  id="sc5" class="menu-item" data-tags="kitfo beef raw spicy mitmita cheese injera ethiopia">
+        <img src="images/MenuImages/EthiopianMeet.jpeg" alt="Kitfo" />
+        <p><b>Kitfo</b><br>Minced raw beef seasoned with mitmita chili, served with soft cheese and injera.</p>
+      </div>
+
+      <div id="sc6" class="menu-item" data-tags="doro wot chicken stew spicy berbere eggs ethiopia injera">
+        <img src="images/MenuImages/EthiopianSpicyStew.jpeg" alt="Doro Wot" />
+        <p><b>Doro Wot</b><br>Chicken stew with berbere spice and hard-boiled eggs, served with injera.</p>
+      </div>
+
+      <div id="sc7"class="menu-item" data-tags="injera bread ethiopia vegetarian platter sharing teff">
+        <img src="images/MenuImages/EthiopianVeggiePlater.jpeg" alt="Injera Platter" />
+        <p><b>Injera</b><br>Teff flour flatbread served with a variety of spiced stews and vegetables.</p>
+      </div>
+
+      <div id="sc8" class="menu-item" data-tags="shiro wot lentils chickpeas stew vegan spicy ethiopia comfort">
+        <img src="images/MenuImages/EthiopianVeggieStew.jpeg" alt="Shiro Wot" />
+        <p><b>Shiro Wot</b><br>Spiced chickpea/lentil stew slow-cooked with onions and berbere — vegan and comforting.</p>
+      </div>
+
+      <!-- Peruvian Menu -->
+      <div id="sc9" class="menu-item" data-tags="aji de gallina chicken stew creamy yellow pepper walnut peru">
+        <img src="images/MenuImages/PeruvianAjiDeGallina.webp" alt="Aji de Gallina" />
+        <p><b>Aji de Gallina</b><br>Shredded chicken stew in creamy yellow pepper and walnut sauce, over potatoes and rice.</p>
+      </div>
+
+      <div id="sc10" class="menu-item" data-tags="causa potato appetizer cold tuna chicken avocado peru">
+        <img src="images/MenuImages/PeruvianCausa.jpg" alt="Causa" />
+        <p><b>Causa</b><br>Layered seasoned mashed potatoes with tuna, chicken, or avocado served cold.</p>
+      </div>
+
+      <div id="sc11" class="menu-item" data-tags="ceviche fish lime chili onion cilantro seafood peru">
+        <img src="images/MenuImages/PeruvianCeviche.jpg" alt="Ceviche" />
+        <p><b>Ceviche</b><br>Raw fish marinated in lime juice, spiced with ají, served with sweet potato and corn.</p>
+      </div>
+
+      <div id="sc12" class="menu-item" data-tags="lomo saltado beef stir-fry soy sauce rice fries peru fusion">
+        <img src="images/MenuImages/PeruvianLomoSaltado.jpg" alt="Lomo Saltado" />
+        <p><b>Lomo Saltado</b><br>Stir-fried beef with onions, tomatoes, and soy sauce, served with rice and fries.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer> 
+  <a href="https://www.instagram.com" target="_blank">
+    <img src="images/logoInstagram.png" alt="Instagram">
+  </a>
+  <a href="https://www.twitter.com" target="_blank">
+    <img class="twitter" src="images/logoTwitter.png" alt="Twitter">
+  </a>
+  <a href="https://www.facebook.com" target="_blank">
+    <img src="images/logoFacebook.png" alt="Facebook">
+  </a>
+  <a href="https://www.tiktok.com" target="_blank">
+    <img class="tiktok" src="images/logoTiktok.png" alt="TikTok">
+  </a>
+  <p>2025&copy;CEP GROUP INC. | ALL RIGHTS RESERVED</p>
+</footer>
+
+
+  <script>
+
+ document.addEventListener("DOMContentLoaded", function () {
+  const params = new URLSearchParams(window.location.search);
+  const query = params.get("q")?.toLowerCase();
+  const items = document.querySelectorAll(".menu-item");
+
+  const noResults = document.createElement("p");
+  noResults.id = "no-results";
+  noResults.style.color = "red";
+  noResults.style.textAlign = "center";
+  noResults.style.fontWeight = "bold";
+  noResults.textContent = "No matching dishes found.";
+  document.querySelector("main").appendChild(noResults);
+  noResults.style.display = "none";
+
+  if (query) {
+    let found = false;
+    items.forEach(item => {
+      const tags = item.dataset.tags.toLowerCase();
+      const text = item.textContent.toLowerCase();
+      const match = tags.includes(query) || text.includes(query);
+      item.style.display = match ? "block" : "none";
+      if (match) found = true;
+    });
+
+    if (!found) {
+      noResults.style.display = "block";
+    }
+  }
+});
+</script>
+
+</body>
+</html>

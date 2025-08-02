@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Andres">
+    <meta name="keywords" content="HTML, CSS, Web Design">
+    <meta name="description" content="Assignment">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/normalize.css" type="text/css">
+    <link rel="stylesheet" href="styles/FAQ.css" type="text/css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<title> CEP </title>
+	<!--setting the name of my website-->
+</head>
+<body>
+	<header >
+        <h1>FAQ</h1>
+	</header>
+	<nav>
+		<section id="Logo">
+		<a href="index.html">
+			<img src="images/logo.png" alt="LogoRestaurant">
+		</a>
+		</section>
+		<section id="Space">
+			<h1>A culinary</h1>
+			<h1>new </h1>
+			<h1>experience</h1>
+		</section>
+                <a href="index.html" id="Home">HOME</a>
+				<a href="AboutUs.html" id="AboutUs">ABOUT US</a>
+				<a href="Menu.html" id="Menu">MENU</a>
+				<a href="ContacUs.html" id="ContacUs">CONTACT US</a>
+				<a href="FAQ.html" id="FAQ">FAQ</a>
+	</nav>
+	<main>
+		<section id="faq">
+
+			<div class="faq-category">
+            <button class="faq-button" onclick="toggleFAQ('general')">General</button>
+           <div id="general" class="faq-section">
+           <button class="faq-subquestion" onclick="toggleFAQ('q1')">What does CEP stand for?</button>
+           <div id="q1" class="faq-content">
+            CEP stands for Colombia, Ethiopia, and Peru—the three countries whose traditional dishes inspire our menu.
+         </div>
+          <button class="faq-subquestion" onclick="toggleFAQ('q2')">Do you offer delivery or takeout?</button>
+          <div id="q2" class="faq-content">
+            Yes, we offer both delivery and takeout. You can order directly from our website or through major delivery apps.
+          </div>
+        </div>
+        </div>
+
+
+			<div class="faq-category">
+			 <button class="faq-button" onclick="toggleFAQ('reservations')">Reservations</button>
+            <div id="reservations" class="faq-section">
+           <button class="faq-subquestion" onclick="toggleFAQ('q3')">Do I need a reservation?</button>
+           <div id="q3" class="faq-content">
+              Reservations are recommended for weekends, but walk-ins are always welcome!
+           </div>
+           <button class="faq-subquestion" onclick="toggleFAQ('q4')">How can I book a table?</button>
+          <div id="q4" class="faq-content">
+            You can reserve a table by calling us or using the reservation form on our Contact page.
+          </div>
+         </div>
+        </div>
+				
+
+
+			<div class="faq-category">
+              <button class="faq-button" onclick="toggleFAQ('menufaq')">Menu & Dietary Options</button>
+            <div id="menufaq" class="faq-section">
+           <button class="faq-subquestion" onclick="toggleFAQ('q5')">Do you have vegetarian or vegan options?</button>
+          <div id="q5" class="faq-content">
+              Absolutely! We have several plant-based dishes from each cuisine, including Shiro Wot and Causa.
+          </div>
+          <button class="faq-subquestion" onclick="toggleFAQ('q6')">Are your dishes spicy?</button>
+          <div id="q6" class="faq-content">
+             Some of our Ethiopian dishes are naturally spicy, but most of our menu can be customized to suit your taste.
+        </div>
+      </div>
+    </div>
+
+			
+			<div class="faq-category">
+           <button class="faq-button" onclick="toggleFAQ('influencer')">Influencer Program</button>
+            <div id="influencer" class="faq-section">
+          <button class="faq-subquestion" onclick="toggleFAQ('q7')">I'm an influencer. How can I collaborate with CEP?</button>
+           <div id="q7" class="faq-content">
+           We're always looking for passionate food lovers! Please see our Contact section for influencer-specific contact information.
+          </div>
+        </div>
+        </div>
+		</section>
+	</main>
+	<footer> 
+  <a href="https://www.instagram.com" target="_blank">
+    <img src="images/logoInstagram.png" alt="Instagram">
+  </a>
+  <a href="https://www.twitter.com" target="_blank">
+    <img class="twitter" src="images/logoTwitter.png" alt="Twitter">
+  </a>
+  <a href="https://www.facebook.com" target="_blank">
+    <img src="images/logoFacebook.png" alt="Facebook">
+  </a>
+  <a href="https://www.tiktok.com" target="_blank">
+    <img class="tiktok" src="images/logoTiktok.png" alt="TikTok">
+  </a>
+  <p>2025&copy;CEP GROUP INC. | ALL RIGHTS RESERVED</p>
+</footer>
+<script>
+  function toggleFAQ(id) {
+    const target = document.getElementById(id);
+  // here i used this java function in order to be able to Close other FAQ sections when one is opened for a good flow
+    const siblings = target.parentElement.querySelectorAll('.faq-section, .faq-content');
+    siblings.forEach(el => {
+      if (el !== target) {
+        el.style.display = 'none';
+      }
+    });
+
+    // Toggle current
+    target.style.display = target.style.display === 'block' ? 'none' : 'block';
+  }
+</script>
+
+
+	
+</body>
+</html>
