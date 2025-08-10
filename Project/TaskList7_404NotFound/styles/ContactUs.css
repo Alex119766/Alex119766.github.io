@@ -3,12 +3,11 @@
   src: url('../font/Oswald/Oswald-VariableFont_wght.ttf') format('truetype');
 }
 
-html {
+html{
     background-color: #204034;
     font-family: 'Oswald';
     font-size: 120%;
-}
-
+   }
 body {
     border: 4px solid black;
     background-color: #e5f0ec;
@@ -42,7 +41,6 @@ header img{
     right: 22px;
     height: 30px;
 }
-
 nav {
     position: sticky;
     top: 0;
@@ -128,128 +126,62 @@ nav a:active {
 }
 main{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     padding: 30px;
     padding-left: 60px;
     margin-right: 15px;
-    height: auto;
+    height: 3240px;
     grid-gap: 16px;
     grid-template-areas:
-            "tit1"
-            "menu"; 
-}
-
-#intro-text{
-    grid-area: tit1; 
-}
-
-main h1{
-    font-weight: bold;
-    margin-bottom: 30px;
-    font-size: 40px;
-}
-main img{
-    width: 100%;
-    height: 40%;
-}
-main h3{
-    text-align: center;
-    color: #c19e1f;
-}
-
-/* Menu grid layout */
-#menu-list {
-    grid-area: menu;
-    gap: 30px;
-    padding: 20px;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
+            "map map"
             "sec1 sec2"
             "sec3 sec4"
             "sec5 sec6"
             "sec7 sec8"
-            "sec11 sec12"
-            "sec9 sec10"; 
+            "sec9 sec10"
+            "inf inf"; 
 }
-
-#sc1{
-    grid-area: sec1;
+main h1{
+    color: #c19e1f;
 }
-
-#sc2{
-    grid-area: sec2;
+#mapa{
+    grid-area:map;
+    text-align: center;
 }
-#sc3{
-    grid-area: sec3;
+#sc1{ 
+    grid-area: sec1; 
 }
-#sc4{
-    grid-area: sec4;
+#sc2{ 
+    grid-area: sec2; 
 }
-
-#sc5{
-    grid-area: sec5;
+#sc3{ 
+    grid-area: sec3; 
 }
-#sc6{
-    grid-area: sec6;
+#sc4{ 
+    grid-area: sec4; 
 }
-#sc7{
-    grid-area: sec7;
+#sc5{ 
+    grid-area: sec5; 
 }
-#sc8{
-    grid-area: sec8;
+#sc6{ 
+    grid-area: sec6; 
 }
-
-#sc9{
-    grid-area: sec9;
+#sc7{ 
+    grid-area: sec7; 
 }
-#sc10{
-    grid-area: sec10;
+#sc8{ 
+    grid-area: sec8; 
 }
-#sc11{
-    grid-area: sec11;
+#sc9{ 
+    grid-area: sec9; 
 }
-#sc12{
-    grid-area: sec12;
+#sc10{ 
+    grid-area: sec10; 
 }
-
-
-/* Individual box styling */
-.menu-item {
-  background-color: #fff;
-  padding: 15px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  text-align: center;
-  max-width: 220px;
-  margin: 0 auto;
-  
+#Influencers{
+    grid-area: inf;
 }
-
-/* Menu image inside card */
-.menu-item img {
-  width: 100%;
-  height: 160px;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
-/* Text inside card */
-.menu-item b {
-  font-size: 1.1rem;
-  color: #000;
-}
-
-.menu-item p {
-  font-size: 0.95rem;
-  line-height: 1.5;
-  color: #333;
-}
-
-
 footer{
     text-align: left;
     border-top: 4px solid black;
@@ -279,7 +211,6 @@ footer a img:hover {
   transform: scale(1.15); 
   filter: brightness(0) saturate(100%); 
 }
-
 .tiktok{
     width: 6%;
     height: 50%;
@@ -289,6 +220,7 @@ footer a img:hover {
 .twitter{
     width: 50px;
 }
+
 @media screen and (max-width: 600px) {
      nav{
         grid-template-rows: 1fr 1fr;
@@ -312,41 +244,37 @@ footer a img:hover {
         padding-left: 5%;
     }
 
-    main img {
-        margin-left: 10px;
-        width: 80%;
-        height: 40%;
-
-    }
     main{
-        height: auto;
-    }
-    main p{
         font-size: 0.9rem;
+        grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 30px;
+    padding-left: 60px;
+    margin-right: 15px;
+    height: 4740px;
+    grid-gap: 16px;
+    grid-template-areas:
+            "map map"
+            "sec1 sec1"
+            "sec2 sec2"
+            "sec3 sec3"
+            "sec4 sec4"
+            "sec5 sec5"
+            "sec6 sec6"
+            "sec7 sec7"
+            "sec8 sec8"
+            "sec9 sec9"
+            "sec10 sec10"
+            "inf inf"; 
     }
-    #menu-list {
-        grid-area: menu;
-        gap: 30px;
-        padding: 20px;
-        justify-content: center;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-                "sec1"
-                "sec2"
-                "sec3"
-                "sec4"
-                "sec5"
-                "sec6"
-                "sec7"
-                "sec8"
-                "sec9"
-                "sec10"
-                "sec11"
-                "sec12"; 
+    main h1{
+        font-size: 1.5rem;
     }
-    
+   #mapa iframe{
+     width: 90%;
+     height: 70%;
+   }
+
     footer {
         height: auto;
         padding: 10px;
@@ -364,4 +292,3 @@ footer a img:hover {
         margin: 5px;
     }
 }
-

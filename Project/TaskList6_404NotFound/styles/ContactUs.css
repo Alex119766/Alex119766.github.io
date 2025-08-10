@@ -22,10 +22,7 @@ header{
     border-bottom: 4px solid black;
     border-top: 4px solid black;
     background-image: url("../images/cookingResized.jpg");
-    background-size: 100%;
-    height: 100px;
-    top: 0;
-    width: 100%;  
+    background-size: 100%; 
     position: sticky;
 }
 
@@ -55,7 +52,6 @@ nav {
     border-top: 4px solid black;
     height: 100px;
     background-color: #f4f1ee;
-    width: 100%;
 }
 #Logo{
     grid-area: log;
@@ -265,9 +261,6 @@ footer img{
     }
     main h1{
         font-size: 1.5rem;
-    }
-    #mapa{
-        
     }
    #mapa iframe{
      width: 90%;
