@@ -54,6 +54,7 @@ nav {
     border-top: 4px solid black;
     height: 100px;
     background-color: #f4f1ee;
+    z-index: 2;
 }
 #Logo{
     grid-area: log;
@@ -148,7 +149,9 @@ main h1{
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
-
+.image-slider button{
+      z-index: 0;
+}
 .slider-container {
   display: flex;
   transition: transform 0.5s ease;
@@ -184,7 +187,7 @@ main h1{
   border: none;
   cursor: pointer;
   border-radius: 50%;
-  z-index: 100;
+
 }
 
 .prev:hover,
@@ -212,6 +215,7 @@ main h1{
 }
 .PrincipalContent{
     margin-bottom: 50px;
+    z-index: 0;
 }
 .Influencers{
     margin-bottom: 15px;
